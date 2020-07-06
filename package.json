@@ -1,0 +1,14 @@
+{
+  "name": "product_finder",
+  "version": "1.0.0",
+  "description": "An app to find products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "apprentices",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
