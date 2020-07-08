@@ -9,10 +9,14 @@ let itemNames = ["PL123456", "PL513872", "PL999999", "PL654321", "PL818181"]
 // <Possibly validate>
 // Check list to see if it contains user input value
 // Return true or false
-rl.question("Input your medical licence number: ", function (answer) {
-  console.log(answer)
-})
 
-// function inputHandler() {
+function inputHandler(answer) {
+  let result = itemNames.includes(answer)
+  if (result) {
+    console.log("Product exists", answer)
+  } else {
+    console.log("Product doesn't exist", answer)
+  }
+}
 
-// }
+rl.question("Input your medical licence number: ", inputHandler)
