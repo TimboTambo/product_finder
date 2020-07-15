@@ -1,4 +1,4 @@
-const { isProductPresent, inputHandler } = require("../index.js")
+const { isProductPresent } = require("../index.js")
 
 describe("Input handler", () => {
   test("returns true when product exists", () => {
