@@ -5,16 +5,17 @@ class product {
     this.dose = dose
     this.substance = substance
     this.url = url
+    this.sensitive_data = "Password/"
   }
 
-  description() {
-    console.log(`
+  toString() {
+    return `
     PL Number: ${this.plNumber}
     Name: ${this.name}
     Dose: ${this.dose}
     Substance: ${this.substance}
     URL: ${this.url}
-    `)
+    `
   }
 }
 
