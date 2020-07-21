@@ -15,7 +15,6 @@ describe("Product class test", () => {
     Substance: substance
     URL: url
     `
-      product1.description()
-      expect(console.log.mock.calls[0][0]).toBe(expectedOutput)
+      expect(product1.toString()).toBe(expectedOutput)
     })
 })
