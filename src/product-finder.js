@@ -5,5 +5,4 @@ function getProduct(product) {
   return productObjects[product]
 }
 
-exports.getProduct = getProduct
 module.exports = getProduct
