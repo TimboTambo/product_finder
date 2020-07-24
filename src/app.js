@@ -18,9 +18,8 @@ function inputHandler(answer, finder) {
 }
 
 function getInput(finder) {
-  rl.question(
-    "Input your medical licence number or Q to quit: ",
-    inputHandler(finder)
+  rl.question("Input your medical licence number or Q to quit: ", (answer) =>
+    inputHandler(answer, finder)
   )
 }
 
