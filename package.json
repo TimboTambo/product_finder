@@ -4,6 +4,7 @@
   "description": "An app to find products",
   "main": "src/index.js",
   "scripts": {
+    "build": "tsc",
     "dev": "nodemon",
     "start": "node src/index.js",
     "test": "jest"
