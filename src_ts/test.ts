@@ -8,9 +8,10 @@
 
 interface ThingWithName {
   name: string
-  readonly age: number
-  height: number
-  makeNoise: () => string
+}
+
+interface ThingWithAge {
+  age: number
 }
 
 const returnAnimalName = (animal: Animal): string => {
@@ -21,9 +22,15 @@ const returnInsectName = (insect: Insect): string => {
   return insect.name
 }
 
-const returnName = (thing: ThingWithName): string => {
+const returnName = (thing: Animal): string => {
   return thing.name
 }
+
+const addAges = (thing1: ThingWithAge, thing2: ThingWithAge) {
+  return thing1.age + thing2.age
+}
+
+
 
 class Animal implements ThingWithName {
   name: string

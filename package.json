@@ -12,8 +12,10 @@
   "author": "apprentices",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.9",
     "jest": "^26.1.0",
     "mocha": "^8.0.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
   }
 }

@@ -1,12 +1,10 @@
-class ProductFinder {
+export default class ProductFinder {
   constructor(dataSource) {
     this.dataSource = dataSource
   }
 
-  getProduct(product) {
+  getProduct(product: string) {
     let productObjects = this.dataSource()
     return productObjects[product]
   }
 }
-
-module.exports = ProductFinder

@@ -1,6 +1,6 @@
-let ProductFinder = require("./services/finder.js")
-let getInput = require("./app.js")
-let getData = require("./repositories/data-provider.js")
+import ProductFinder from "./services/finder"
+import getInput from "./app"
+import getData from "./repositories/data-provider"
 
 function startUp() {
   let finder = new ProductFinder(getData)

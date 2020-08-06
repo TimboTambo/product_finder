@@ -1,4 +1,5 @@
-let readline = require("readline")
+import readline = require("readline")
+
 let rl = readline.createInterface(process.stdin, process.stdout)
 
 function inputHandler(answer, finder) {
@@ -17,10 +18,8 @@ function inputHandler(answer, finder) {
   getInput(finder)
 }
 
-function getInput(finder) {
+export default function getInput(finder) {
   rl.question("Input your medical licence number or Q to quit: ", (answer) =>
     inputHandler(answer, finder)
   )
 }
-
-module.exports = getInput

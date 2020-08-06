@@ -1,4 +1,4 @@
-const product = require("./product.js")
+import product from "./product"
 
 describe("Product class test", () => {
   test("can be created", () => {
