@@ -1,8 +1,9 @@
-export default class product {
+export default class Product {
   plNumber: string
   name: string
   dose: string
   substance: string
+
   url: string
 
   constructor(
@@ -21,7 +22,7 @@ export default class product {
 
   toString(): string {
     return `
-    PL Number: ${this.plNumber}
+    PL Numberssss: ${this.plNumber}
     Name: ${this.name}
     Dose: ${this.dose}
     Substance: ${this.substance}

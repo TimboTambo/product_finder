@@ -1,8 +1,8 @@
-let ProductFinder = require("./finder.js")
-const product = require("../models/product.js")
+import ProductFinder from "./finder"
+import Product from "../models/product"
 
 function setup(name) {
-  let mockProduct = new product(
+  let mockProduct = new Product(
     "PL1000",
     name,
     "test-dose",
@@ -20,7 +20,7 @@ describe("Product Finder Test", () => {
 
     let finder = new ProductFinder(mockDataSource)
     let result = finder.getProduct("PL1000")
-    expect(result).toBeInstanceOf(product)
+    expect(result).toBeInstanceOf(Product)
   })
   test("check if Product name matches", () => {
     let expected = "test-name"
