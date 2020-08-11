@@ -22,7 +22,7 @@ export default class Product {
 
   toString(): string {
     return `
-    PL Numberssss: ${this.plNumber}
+    PL Number: ${this.plNumber}
     Name: ${this.name}
     Dose: ${this.dose}
     Substance: ${this.substance}
